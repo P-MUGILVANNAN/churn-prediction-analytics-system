@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: churn_mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD:-churn_db_password}
+      MYSQL_DATABASE: ${MYSQL_DB:-churn_db}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysqldata:/var/lib/mysql
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: churn_backend
+    restart: always
+    environment:
+      DATABASE_URL: mysql+pymysql://${MYSQL_USER:-root}:${MYSQL_PASSWORD:-churn_db_password}@mysql:3306/${MYSQL_DB:-churn_db}?charset=utf8mb4
+      SECRET_KEY: ${SECRET_KEY:-enterprise-production-churn-key-2026}
+      DEMO_USER: ${DEMO_USER:-analyst@telecom.ai}
+      DEMO_PASS: ${DEMO_PASS:-churn2026}
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mysql
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: churn_frontend
+    restart: always
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  mysqldata:

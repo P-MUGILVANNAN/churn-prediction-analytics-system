@@ -1,0 +1,76 @@
+{
+  "total_customers": 7043,
+  "segments": [
+    {
+      "cluster_id": 0,
+      "segment_code": "UPSELL_CANDIDATE",
+      "segment_name": "Upsell & Cross-Sell Candidates",
+      "customer_count": 1130,
+      "percentage": 16.0,
+      "avg_churn_prob": 0.326,
+      "avg_monthly_charges": 87.56,
+      "avg_tenure": 33.8,
+      "revenue_at_risk_monthly": 18395.45,
+      "recommended_action": "Bundled Multi-Product Upgrade Campaign",
+      "business_priority": "Medium",
+      "color": "#8B5CF6"
+    },
+    {
+      "cluster_id": 1,
+      "segment_code": "UPSELL_CANDIDATE",
+      "segment_name": "Upsell & Cross-Sell Candidates",
+      "customer_count": 1738,
+      "percentage": 24.7,
+      "avg_churn_prob": 0.191,
+      "avg_monthly_charges": 35.18,
+      "avg_tenure": 12.0,
+      "revenue_at_risk_monthly": 648.35,
+      "recommended_action": "Bundled Multi-Product Upgrade Campaign",
+      "business_priority": "Medium",
+      "color": "#8B5CF6"
+    },
+    {
+      "cluster_id": 2,
+      "segment_code": "HIGH_RISK_HIGH_VALUE",
+      "segment_name": "High-Risk High-Value",
+      "customer_count": 1488,
+      "percentage": 21.1,
+      "avg_churn_prob": 0.635,
+      "avg_monthly_charges": 77.16,
+      "avg_tenure": 6.9,
+      "revenue_at_risk_monthly": 100787.15,
+      "recommended_action": "Executive Outreach & Bespoke Annual Discount",
+      "business_priority": "Critical",
+      "color": "#EF4444"
+    },
+    {
+      "cluster_id": 3,
+      "segment_code": "LOYAL_HIGH_VALUE",
+      "segment_name": "Loyal High-Value",
+      "customer_count": 1469,
+      "percentage": 20.9,
+      "avg_churn_prob": 0.118,
+      "avg_monthly_charges": 94.04,
+      "avg_tenure": 63.8,
+      "revenue_at_risk_monthly": 197.6,
+      "recommended_action": "VIP Loyalty Rewards & Early Feature Access",
+      "business_priority": "Low",
+      "color": "#10B981"
+    },
+    {
+      "cluster_id": 4,
+      "segment_code": "LOW_RISK_STEADY",
+      "segment_name": "Low-Risk Steady",
+      "customer_count": 1218,
+      "percentage": 17.3,
+      "avg_churn_prob": 0.044,
+      "avg_monthly_charges": 35.36,
+      "avg_tenure": 53.3,
+      "revenue_at_risk_monthly": 0.0,
+      "recommended_action": "Automated Quarterly Check-in",
+      "business_priority": "Standard",
+      "color": "#3B82F6"
+    }
+  ],
+  "generated_at": "2026-10-13T12:03:09.341096"
+}

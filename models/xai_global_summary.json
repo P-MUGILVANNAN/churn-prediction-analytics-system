@@ -1,0 +1,111 @@
+{
+  "top_features": [
+    {
+      "rank": 1,
+      "feature": "Contract_Month-to-month",
+      "importance": 0.7471,
+      "direction": "Increases Risk",
+      "display_name": "Contract Month-To-Month"
+    },
+    {
+      "rank": 2,
+      "feature": "tenure",
+      "importance": 0.4416,
+      "direction": "Reduces Risk",
+      "display_name": "Tenure"
+    },
+    {
+      "rank": 3,
+      "feature": "MonthlyCharges",
+      "importance": 0.2524,
+      "direction": "Increases Risk",
+      "display_name": "Monthlycharges"
+    },
+    {
+      "rank": 4,
+      "feature": "OnlineSecurity_No",
+      "importance": 0.2406,
+      "direction": "Increases Risk",
+      "display_name": "Onlinesecurity No"
+    },
+    {
+      "rank": 5,
+      "feature": "InternetService_Fiber optic",
+      "importance": 0.1898,
+      "direction": "Increases Risk",
+      "display_name": "Internetservice Fiber Optic"
+    },
+    {
+      "rank": 6,
+      "feature": "TechSupport_No",
+      "importance": 0.1774,
+      "direction": "Increases Risk",
+      "display_name": "Techsupport No"
+    },
+    {
+      "rank": 7,
+      "feature": "PaymentMethod_Electronic check",
+      "importance": 0.1591,
+      "direction": "Increases Risk",
+      "display_name": "Paymentmethod Electronic Check"
+    },
+    {
+      "rank": 8,
+      "feature": "TotalCharges",
+      "importance": 0.1489,
+      "direction": "Reduces Risk",
+      "display_name": "Totalcharges"
+    },
+    {
+      "rank": 9,
+      "feature": "Contract_Two year",
+      "importance": 0.1218,
+      "direction": "Reduces Risk",
+      "display_name": "Contract Two Year"
+    },
+    {
+      "rank": 10,
+      "feature": "PaperlessBilling_No",
+      "importance": 0.1156,
+      "direction": "Reduces Risk",
+      "display_name": "Paperlessbilling No"
+    },
+    {
+      "rank": 11,
+      "feature": "MultipleLines_No",
+      "importance": 0.1067,
+      "direction": "Reduces Risk",
+      "display_name": "Multiplelines No"
+    },
+    {
+      "rank": 12,
+      "feature": "Contract_One year",
+      "importance": 0.0848,
+      "direction": "Increases Risk",
+      "display_name": "Contract One Year"
+    },
+    {
+      "rank": 13,
+      "feature": "OnlineBackup_No",
+      "importance": 0.0663,
+      "direction": "Increases Risk",
+      "display_name": "Onlinebackup No"
+    },
+    {
+      "rank": 14,
+      "feature": "StreamingMovies_Yes",
+      "importance": 0.0502,
+      "direction": "Increases Risk",
+      "display_name": "Streamingmovies Yes"
+    },
+    {
+      "rank": 15,
+      "feature": "SeniorCitizen_0",
+      "importance": 0.0364,
+      "direction": "Reduces Risk",
+      "display_name": "Seniorcitizen 0"
+    }
+  ],
+  "sample_size": 500,
+  "generated_at": "2026-10-13T12:02:35.312790"
+}
