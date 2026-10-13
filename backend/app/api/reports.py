@@ -87,3 +87,19 @@ def get_research_paper_data():
             "N. V. Chawla, K. W. Bowyer, L. O. Hall, and W. P. Kegelmeyer, 'SMOTE: Synthetic minority over-sampling technique,' Journal of Artificial Intelligence Research, vol. 16, pp. 321-357, 2002."
         ]
     }
+
+
+@router.get("/download-ieee-doc")
+def download_ieee_word_document():
+    """Serves the generated IEEE formatted Word document (.docx) for download."""
+    from fastapi.responses import FileResponse
+    doc_path = os.path.join("reports", "IEEE_Customer_Churn_Research_Paper.docx")
+    if not os.path.exists(doc_path):
+        from scratch.generate_ieee_docx import build_ieee_document
+        build_ieee_document()
+    return FileResponse(
+        path=doc_path,
+        filename="IEEE_Customer_Churn_Research_Paper.docx",
+        media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    )
+

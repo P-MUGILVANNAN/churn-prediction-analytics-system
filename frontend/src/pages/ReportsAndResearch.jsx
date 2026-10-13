@@ -71,6 +71,15 @@ export default function ReportsAndResearch() {
             </button>
           </div>
 
+          <a
+            href="/api/reports/download-ieee-doc"
+            download="IEEE_Customer_Churn_Research_Paper.docx"
+            className="flex items-center space-x-1.5 sm:space-x-2 px-3 sm:px-4 py-2 bg-blue-600 text-white rounded-lg text-xs sm:text-sm font-semibold hover:bg-blue-700 transition shadow-xs"
+          >
+            <Download className="w-4 h-4 shrink-0" />
+            <span>IEEE Word (.docx)</span>
+          </a>
+
           <button
             onClick={handlePrint}
             className="flex items-center space-x-1.5 sm:space-x-2 px-3 sm:px-4 py-2 bg-slate-900 text-white rounded-lg text-xs sm:text-sm font-semibold hover:bg-slate-800 transition shadow-xs"

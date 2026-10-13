@@ -12,6 +12,9 @@
 *.sqlite
 *.sqlite3
 
+# Scratch & Temporary Scripts
+scratch/
+
 # ==========================================
 # Python & Bytecode Artifacts
 # ==========================================
